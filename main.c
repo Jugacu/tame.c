@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char* concatenate(char *a, char *b) {
+char *concatenate(char *a, char *b) {
   int sizf = sizeof(a) + sizeof(b);
   char *both_ptr = malloc(sizf);
 
@@ -22,4 +22,3 @@ int main() {
 
   return 0;
 }
-
