@@ -1,6 +1,6 @@
 CC 		 = gcc
 CFLAGS   = -Wall -Wextra -I$(RAYLIBSRC)
-LIBS     = -L$(RAYLIBSRC) -lraylib -lm -ldl -pthread -lrt -lX11 -lGL -lXrandr -lXi
+LIBS     = -L$(RAYLIBSRC) -lraylib -lm
 
 RAYLIBSRC = thirdparty/raylib/src
 
