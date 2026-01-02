@@ -1,0 +1,5 @@
+-Isrc
+-Ithirdparty/raylib/src
+-Ithirdparty/raylib/src/external
+-std=c99
+-Wall

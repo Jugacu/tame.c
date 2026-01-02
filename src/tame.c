@@ -1,7 +1,11 @@
 #include "raylib.h"
+#include <game.h>
 
 int main(void) {
-  // Initialization of the window
+
+  Game game = {0};
+  game_init(&game);
+
   InitWindow(800, 450, "tame");
 
   SetTargetFPS(60);
@@ -11,14 +15,13 @@ int main(void) {
   {
     BeginDrawing();
 
-    ClearBackground(BLACK);
-
-    DrawText("Hello, World!", 190, 200, 20, WHITE);
+    float dt = GetFrameTime();
+    game_tick(&game, dt);
 
     EndDrawing();
   }
 
-  CloseWindow(); // Close window and OpenGL context
+  CloseWindow();
 
   return 0;
 }

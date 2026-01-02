@@ -1,3 +1,4 @@
 CompileFlags:
-  Add: [-Ithirdparty/raylib/src, -Ithirdparty/raylib/src/external]
-
+  CompilationDatabase: "."
+Index:
+  Background: Build
